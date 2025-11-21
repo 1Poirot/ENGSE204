@@ -9,10 +9,10 @@ public class Lab1_3 {
 		   System.out.print("Enter your number : ");
 		  int number = input.nextInt();
 		  
-		  
 			   if (number % 2 == 0) { 
 				System.out.print("Even");
 	           }
+			   
 			   else{
 	            System.out.print("Odd");
 	            }
@@ -21,5 +21,3 @@ public class Lab1_3 {
 	}
         
 }
-
-
