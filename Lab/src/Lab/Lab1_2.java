@@ -9,7 +9,6 @@ public class Lab1_2 {
 	    float Height = input.nextFloat();
 	    System.out.println(Width * Height);
 	        input.close();
+	        
 	    }
-	
-	
 }
