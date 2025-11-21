@@ -23,7 +23,7 @@ public class Lab1_4 {
 	            grade = "F";
 	        }
 	        
-	        System.out.printf("grade: %s", grade);
+	        System.out.printf("grade : %s", grade);
 	        
 	        input.close();
 
