@@ -27,6 +27,7 @@ public class Lab1_5 {
       } else {
     	  Menu = "Invalid Menu";
       }
+      
       System.out.printf("Menu : %s", Menu);
       
       input.close();
