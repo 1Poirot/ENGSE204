@@ -1,10 +1,8 @@
 package Lab;
 
-public class Lab1_8 {
-
+public class Lab1_10 {
 	public static void main(String[] args) {
 		
 
 	}
-
 }
