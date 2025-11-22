@@ -6,27 +6,27 @@ public class Lab1_13 {
 		 public static void main(String[] args) {
 		        Scanner input = new Scanner(System.in);
 
-		        System.out.print(":");  
+		        System.out.print("Enter row and column:");  
 		        int R = input.nextInt();
 		        int C = input.nextInt();
 		        
 		        int[][] grid = new int[R][C];
-		        int onlineCount = 0; 
+		        int count = 0; 
 		        
 		        
 		        for (int i = 0; i < R; i++) {
-		          System.out.print("Input:");  
+		          System.out.print("Status :");  
 		          for (int j = 0; j < C; j++) {
 		                grid[i][j] = input.nextInt(); 
 		                if (grid[i][j] == 1) {
-		                    onlineCount++; 
+		                    count++; 
 		                }
 		            }
 		            
 		        }
 
-		        System.out.println(onlineCount);
+		        System.out.println("Status summary : "+count);
 
 		        input.close();
-		    }
-		}
+		 }
+}
