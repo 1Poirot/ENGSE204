@@ -25,6 +25,6 @@ public class Lab1_8 {
 	        }
 			
 		 System.out.println("Maximum number: " + max);
+		 
 			 }
-
 }
