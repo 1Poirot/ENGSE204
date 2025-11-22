@@ -13,7 +13,6 @@ public class Lab1_13 {
 		        int[][] grid = new int[R][C];
 		        int count = 0; 
 		        
-		        
 		        for (int i = 0; i < R; i++) {
 		          System.out.print("Status :");  
 		          for (int j = 0; j < C; j++) {
