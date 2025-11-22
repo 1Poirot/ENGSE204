@@ -7,17 +7,25 @@ public class Lab1_9 {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Enter your number :");
-		double number = input.nextDouble(); 
-		
-		
-		
-		
-		double sum = 0 ;
-		
+		int number = input.nextInt(); 
 	
+		int [] array = new int [number];
+		
+		for (int i = 0; i < array.length; i++) {
+			array[i] = input.nextInt();
 		
 		}
 		
+		int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+		
+        double average = (double) sum / array.length;
+		
+        System.out.println("Average: " + average);
+		}
+	
 	}
 	
 
