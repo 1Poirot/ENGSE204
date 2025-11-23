@@ -16,6 +16,7 @@ public class Lab1_13 {
 		        for (int i = 0; i < R; i++) {
 		          System.out.print("Status :");  
 		          for (int j = 0; j < C; j++) {
+		        	  
 		                grid[i][j] = input.nextInt(); 
 		                if (grid[i][j] == 1) {
 		                    count++; 
