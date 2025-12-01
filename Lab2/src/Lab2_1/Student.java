@@ -3,8 +3,8 @@ package Lab2_1;
 import java.util.Scanner;
 
 public class Student {
-	String studentid;
-	String name;
+	private String studentid;
+	private String name;
  
  Student(String studentid, String name) {
      this.studentid = studentid;
