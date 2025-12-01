@@ -16,7 +16,6 @@ public class Student {
      System.out.println("Name: " + name);
  }
 
-
  public static void main(String[] args) {
      Scanner input = new Scanner(System.in);
      
@@ -30,5 +29,6 @@ public class Student {
      
      s.displayInfo();
      input.close();
- }
+     
+ 	}
 }
