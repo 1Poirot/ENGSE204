@@ -24,8 +24,8 @@ public class Student {
      
      Student s = new Student(id, name);
      
-     System.out.println("Student ID " + s.studentid);
-     System.out.println("Name " + s.name);
+     System.out.println("Student ID: " + s.studentid);
+     System.out.println("Name: " + s.name);
      
      
      input.close();

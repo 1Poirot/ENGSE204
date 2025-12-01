@@ -8,10 +8,9 @@ public class Lab1_6 {
 		  
 		  System.out.print("Enter your number :  " );
 	        int number = input.nextInt(); 
-	        
+
 	        for (int i = 1; i <= 12; i++) {
-	        	
-	            System.out.printf("number x i = %d\n", number, i, (number * i)); 
+	            System.out.printf("%d x %d = %d\n", number, i, (number * i)); 
 	            
 	        }
 	 }
