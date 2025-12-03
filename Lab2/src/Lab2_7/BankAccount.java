@@ -32,10 +32,10 @@ public class BankAccount {
         System.out.print("Enter initial balance: ");
         double initialBalance = input.nextDouble();
 
-        System.out.print("Enter amount to withdraw (1st time): ");
+        System.out.print("Enter the required quantity 1st time: ");
         double firstWithdraw = input.nextDouble();
 
-        System.out.print("Enter amount to withdraw (2nd time): ");
+        System.out.print("Enter the required quantity 2st time: ");
         double secondWithdraw = input.nextDouble();
 
         BankAccount account = new BankAccount(name, initialBalance);
