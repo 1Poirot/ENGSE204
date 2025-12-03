@@ -36,23 +36,25 @@ public class Lab2_9 {
     }
 
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         System.out.print("Enter name: ");
-        String name = sc.nextLine();
+        String name = input.nextLine();
+        
         System.out.print("Enter address: ");
-        String address = sc.nextLine();
+        String address = input.nextLine();
+        
         System.out.print("Enter city: ");
-        String city = sc.nextLine();
+        String city = input.nextLine();
+        
         System.out.print("zip code: ");
-        String zip = sc.nextLine();
+        String zip = input.nextLine();
 
         Address userAddress = new Address(address, city, zip);
         Student s = new Student(name, userAddress);
 
         s.showProfile();
-        sc.close();
+        input.close();
     }
 
 }
