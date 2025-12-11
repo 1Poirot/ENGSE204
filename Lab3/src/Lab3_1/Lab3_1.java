@@ -8,19 +8,19 @@ public class Lab3_1 {
         this.username = username;
     }
 
-    public String getUsername() {
+    public String getusername() {
         return this.username;
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         System.out.print("Enter name: ");
-        String name = sc.nextLine();
+        String name = input.nextLine();
 
         System.out.print("Name is: ");
         Lab3_1 u = new Lab3_1(name);
 
-        System.out.println(u.getUsername());
+        System.out.println(u.getusername());
     }
 }
