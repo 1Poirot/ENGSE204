@@ -1,13 +1,13 @@
 package Lab3_4;
 import java.util.Scanner;
 
-public class Lab3_4{
-    private String name;                 
-    private static int productCount = 0; 
-    
+public class Lab3_4 {
+    private String name;                     
+    private static int productCount = 0;     
+
     public Lab3_4(String name) {
         this.name = name;
-        productCount++;                  
+        productCount++;                     
     }
 
     public String getName() {
@@ -21,7 +21,7 @@ public class Lab3_4{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter number of products: ");
+        System.out.print("Enter number products: ");
         int n = input.nextInt();
         input.nextLine(); 
 
@@ -29,8 +29,7 @@ public class Lab3_4{
             System.out.print("Enter product name: ");
             String name = input.nextLine();
 
-            Lab3_4 p = new Lab3_4(name);   
-            System.out.println("Added: " + p.getName());
+            Lab3_4 p = new Lab3_4(name);
         }
 
         System.out.println("Total products: " + Lab3_4.getProductCount());
