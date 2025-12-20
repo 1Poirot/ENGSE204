@@ -21,9 +21,11 @@ class Movie {
 
         if (rating > 10.0) {
             this.rating = 10.0;
-        } else if (rating < 0.0) {
+        } 
+        else if (rating < 0.0) {
             this.rating = 0.0;
-        } else {
+        } 
+        else {
             this.rating = rating;
         }
     }
@@ -35,34 +37,39 @@ class Movie {
 
 public class Lab4_8 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter mode:");
+        int mode = input.nextInt();
+        input.nextLine();
 
-        int mode = sc.nextInt();
-        sc.nextLine(); 
-
-        Movie movie = null;
+        Movie movie;
 
         if (mode == 1) {
-            String title = sc.nextLine();
+        	
+        	System.out.print("Enter title:");
+            String title = input.nextLine();
             movie = new Movie(title);
 
         } else if (mode == 2) {
-            String title = sc.nextLine();
-            String director = sc.nextLine();
+        	System.out.print("Enter title:");
+            String title = input.nextLine();
+            System.out.print("Enter director:");
+            String director = input.nextLine();
             movie = new Movie(title, director);
 
-        } else if (mode == 3) {
-            String title = sc.nextLine();
-            String director = sc.nextLine();
-            double rating = sc.nextDouble();
-            movie = new Movie(title, director, rating);
+        } else {
+        	System.out.print("Enter title:");
+            String title = input.nextLine();
+            System.out.print("Enter director:");
+            String director = input.nextLine();
+            System.out.print("Enter rating:");
+            double score = input.nextDouble();
+            
+            movie = new Movie(title, director, score);
         }
 
-        if (movie != null) {
-            movie.displayDetails();
-        }
-
-        sc.close();
+        movie.displayDetails();
+        input.close();
     }
 }
-
