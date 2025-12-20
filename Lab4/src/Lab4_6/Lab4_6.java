@@ -21,9 +21,9 @@ class Point {
     }
 
     public Point move(int dx, int dy) {
-        int newX = this.x + dx;
-        int newY = this.y + dy;
-        return new Point(newX, newY);
+        int newx = this.x + dx;
+        int newy = this.y + dy;
+        return new Point(newx, newy);
     }
 
     public void displayInfo() {
@@ -33,20 +33,24 @@ class Point {
 
 public class Lab4_6 {
     public static void main(String[] args) {
+    	Scanner input = new Scanner(System.in);
+    	
+    	System.out.print("Enter X: ");
+        int x = input.nextInt();
+        System.out.print("Enter Y: ");
+        int y = input.nextInt();
+        
+        System.out.print("Enter DX: ");
+        int dx = input.nextInt();
+        System.out.print("Enter DY: ");
+        int dy = input.nextInt();
 
-        int x = 1;
-        int y = 2;
-        int dx = 3;
-        int dy = 4;
+        Point xy = new Point(x, y);
+        Point dxy = xy.move(dx, dy);
+        Point dyy = dxy.move(dx, dy);
 
-        Point p1 = new Point(x, y);
-
-        Point p2 = p1.move(dx, dy);
-
-        Point p3 = p2.move(dx, dy);
-
-        p1.displayInfo();
-        p2.displayInfo();
-        p3.displayInfo();
+        xy.displayInfo();
+        dxy.displayInfo();
+        dyy.displayInfo();
     }
 }
