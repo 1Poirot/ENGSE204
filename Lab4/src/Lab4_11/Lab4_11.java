@@ -37,19 +37,19 @@ public class Lab4_11 {
 
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter base theme:");
+        System.out.print("Enter base theme:");
         String baseTheme = input.nextLine();
-        System.out.println("Enter base font size:");
+        System.out.print("Enter base font size:");
         int baseFontSize = input.nextInt();
-        System.out.println("Enter mode (true/false):");
+        System.out.print("Enter mode (true/false):");
         boolean baseDark = input.nextBoolean();
 
         input.nextLine();
-        System.out.println("Enter user theme:");
+        System.out.print("Enter user theme:");
         String userTheme = input.nextLine();
-        System.out.println("Enter user font size:");
+        System.out.print("Enter user font size:");
         int userFontSize = input.nextInt();
-        System.out.println("Enter mode (true/false):");
+        System.out.print("Enter mode (true/false):");
         boolean userDark = input.nextBoolean();
 
         Configuration baseConfig =
