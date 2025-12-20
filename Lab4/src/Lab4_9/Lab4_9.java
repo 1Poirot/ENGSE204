@@ -57,19 +57,19 @@ class ImmutableAccount {
 public class Lab4_9{
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         System.out.print("Enter Account ID: ");
-        String id = sc.nextLine();
+        String id = input.nextLine();
 
         System.out.print("Enter initial balance: ");
-        double initialBalance = sc.nextDouble();
+        double initialBalance = input.nextDouble();
 
         System.out.print("Enter deposit amount: ");
-        double depositAmount = sc.nextDouble();
+        double depositAmount = input.nextDouble();
 
         System.out.print("Enter withdrawal amount: ");
-        double withdrawAmount = sc.nextDouble();
+        double withdrawAmount = input.nextDouble();
 
         ImmutableAccount acc1 = new ImmutableAccount(id, initialBalance);
 
