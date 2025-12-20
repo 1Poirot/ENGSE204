@@ -19,12 +19,10 @@ public class Student {
 
      System.out.print("Enter Name: ");
      String name = input.nextLine();
-     
      Student s = new Student(id, name);
      
      System.out.println("Student ID: " + s.studentid);
      System.out.println("Name: " + s.name);
-     
      
      input.close();
  }
