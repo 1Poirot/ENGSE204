@@ -1,10 +1,42 @@
 package Lab4_7;
+import java.util.Scanner;
+
+class Resource {
+    private String id;
+
+    public Resource(String id) {
+        this.id = id;
+        System.out.println("Resource " + id + " created.");
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("Resource " + id + " finalized (destroyed)");
+        super.finalize();
+    }
+}
 
 public class Lab4_7 {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter ID1: ");
+        String id1 = input.next();
+        System.out.print("Enter ID2: ");
+        String id2 = input.next();
+        System.out.print("Enter ID3:");
+        String id3 = input.next();
 
-	}
+        Resource r1 = new Resource(id1);
+        Resource r2 = new Resource(id2);
+        Resource r3 = new Resource(id3);
 
+        r1 = null;
+        r2 = null;
+        r3 = null;
+        System.gc();
+
+        input.close();
+    }
 }
