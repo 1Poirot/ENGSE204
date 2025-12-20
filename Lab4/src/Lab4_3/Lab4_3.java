@@ -39,7 +39,7 @@ public class Lab4_3 {
         	System.out.print("Enter username:");
             String username = input.next();
         	
-            System.out.print("Enter Level");
+            System.out.print("Enter Level: ");
             int level = input.nextInt();
             player = new Player(username, level);
         } else {
