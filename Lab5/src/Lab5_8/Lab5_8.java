@@ -84,4 +84,3 @@ public class Lab5_8 {
         input.close();
     }
 }
-
