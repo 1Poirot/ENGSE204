@@ -45,17 +45,17 @@ public class Lab5_14 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter StandardShipping tracking ID:");
+        System.out.print("Enter Shipping ID: ");
         String stdId = input.nextLine();
-        System.out.println("Enter StandardShipping base fee:");
+        System.out.print("Enter Shipping fee: ");
         double stdBaseFee = input.nextDouble();
         input.nextLine();
 
-        System.out.println("Enter PremiumShipping tracking ID:");
+        System.out.print("Enter Premium ID: ");
         String preId = input.nextLine();
-        System.out.println("Enter PremiumShipping base fee:");
+        System.out.print("Enter Premium fee: ");
         double preBaseFee = input.nextDouble();
-        System.out.println("Enter PremiumShipping insurance fee:");
+        System.out.print("Enter Premium fee: ");
         double insuranceFee = input.nextDouble();
 
         Shipping s1 = new StandardShipping(stdId, stdBaseFee);
