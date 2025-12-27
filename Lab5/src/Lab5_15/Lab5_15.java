@@ -42,15 +42,15 @@ public class Lab5_15 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Enter Car model:");
+        System.out.print("Enter Car model: ");
         String carModel = input.nextLine();
-        System.out.println("Enter Car rental rate:");
+        System.out.print("Enter Car rental rate: ");
         double carRate = input.nextDouble();
         input.nextLine();
 
-        System.out.println("Enter Motorcycle model:");
+        System.out.print("Enter Motorcycle model: ");
         String bikeModel = input.nextLine();
-        System.out.println("Enter Motorcycle rental rate:");
+        System.out.print("Enter Motorcycle rental rate: ");
         double bikeRate = input.nextDouble();
 
         RentalVehicle car = new Car(carModel, carRate);
